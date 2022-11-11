@@ -13,7 +13,7 @@ server.use(cors())
 server.use('/api/auth', Auth)
 
 server.use('*', (req, res) => {
-  
+  res.status(200).send({message: "api up"})
 })
 
 server.use((err, req, res, next) => {
