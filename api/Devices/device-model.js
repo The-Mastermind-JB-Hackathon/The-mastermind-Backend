@@ -28,7 +28,7 @@ async function addDeviceToUser(device) {
 }
 
 async function addPhoneNumberToDevice(associatedPhone) {
-    console.log(associatedPhone);
+    // console.log(associatedPhone);
     return db("associated_phone").insert(associatedPhone, ["*"]);
   }
 

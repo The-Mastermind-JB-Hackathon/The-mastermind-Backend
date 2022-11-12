@@ -43,17 +43,15 @@ router.post("/add_device", restricted, (req, res) => {
 router.post("/:device_id", restricted, (req, res) => {
   const device_id = req.params.device_id;
   const user_id = req.decodedJwt.user_id;
-  const subscriber_name = req.body.subscriber_name;
-  const phone_number = req.body.phone_number;
+  const phone_number = req.body.phonenumber;
   const associated_phone = {
     device_id,
     phone_number,
     user_id,
-    subscriber_name,
   };
   Device.addPhoneNumberToDevice(associated_phone)
     .then((res) => res.json(res))
-    .catch((err) => console.log(res));
+    .catch((err) => console.log(err));
 });
 
 module.exports = router;
