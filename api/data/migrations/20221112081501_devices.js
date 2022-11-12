@@ -9,6 +9,7 @@ exports.up = async (knex) => {
         .onDelete('cascade')
         .onUpdate('cascade')
         devices.string('device_name')
+        devices.string('alert_message')
       })
   }
   

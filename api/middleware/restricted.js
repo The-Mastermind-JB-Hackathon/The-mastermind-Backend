@@ -13,6 +13,8 @@ module.exports = (req, res, next) => {
       }
     })
   } else {
+    console.log(req.headers)
+
     next({ status: 401, message: 'please login' })
   }
 };

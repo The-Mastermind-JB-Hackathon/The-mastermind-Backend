@@ -6,6 +6,7 @@ const path = require('path')
 const server = express()
 const Auth = require('./Auth/auth-router')
 const Devices = require('./Devices/device-router')
+const Alert = require('./Alert/alert-router')
 
 
 server.use(express.json())
@@ -14,6 +15,8 @@ server.use(cors())
 
 server.use('/api/auth', Auth)
 server.use('/api/devices', Devices)
+server.use('/api/alert', Alert)
+
 
 
 server.use('*', (req, res) => {
