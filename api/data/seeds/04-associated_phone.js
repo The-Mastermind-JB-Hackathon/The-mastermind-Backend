@@ -1,7 +1,7 @@
 exports.seed = function (knex) {
   return knex("associated_phone").insert([
     {
-      phone_number: "4793048383",
+      phone_number: "4793214877",
       subscriber_name: "alex",
       device_id: 1,
       user_id: 1,

@@ -10,6 +10,7 @@ exports.up = async (knex) => {
         .onUpdate('cascade')
         devices.string('device_name')
         devices.string('alert_message')
+        devices.string('imgUrl')
       })
   }
   
