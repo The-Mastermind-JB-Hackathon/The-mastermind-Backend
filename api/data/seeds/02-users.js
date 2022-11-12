@@ -10,5 +10,9 @@ exports.seed = function (knex) {
     { username: "issac", password: hashed("123"), email: "issac@gmail.com" , img: 'https://picsum.photos/200/300', first_name: 'issac', last_name: 'rob'},
     { username: "francis", password: hashed("123"), email: "francis@gmail.com" ,img: 'https://picsum.photos/200/300', first_name: 'francis', last_name: 'nguyen'},
     { username: "krisda", password: hashed("123"), email: "krisda@gmail.com" , img: 'https://picsum.photos/200/300', first_name: 'krisda', last_name: 'dover'},
+    { username: "eva", password: hashed("123"), email: "krisda@gmail.com" , img: 'https://picsum.photos/200/300', first_name: 'krisda', last_name: 'dover'},
+    { username: "amna", password: hashed("123"), email: "krisda@gmail.com" , img: 'https://picsum.photos/200/300', first_name: 'krisda', last_name: 'dover'},
+    { username: "jay", password: hashed("123"), email: "krisda@gmail.com" , img: 'https://picsum.photos/200/300', first_name: 'krisda', last_name: 'dover'},
+
   ]);
 };
