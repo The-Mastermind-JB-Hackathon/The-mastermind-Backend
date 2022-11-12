@@ -9,8 +9,8 @@ exports.seed = function (knex) {
     {
       phone_number: "4793048383",
       subscriber_name: "alex",
-      device_id: 2,
-      user_id: 2,
+      device_id: 1,
+      user_id: 1,
     },
     {
       phone_number: "4793048383",

@@ -18,17 +18,26 @@ async function getDeviceByUserId(user_id) {
 }
 
 async function getDeviceAssociatedPhoneNumber(device_id, user_id) {
+  console.log(user_id);
   return db("associated_phone").where({ device_id }).andWhere({ user_id });
 }
 
 async function addDeviceToUser(device) {
-    console.log(device)
-    return db("devices").insert(device, ['*'])
+  console.log(device);
+  return db("devices").insert(device, ["*"]);
+}
+
+async function addPhoneNumberToDevice(associatedPhone) {
+    console.log(associatedPhone);
+    return db("associated_phone").insert(associatedPhone, ["*"]);
   }
+
+
 
 module.exports = {
   getAll,
   getDeviceByUserId,
   getDeviceAssociatedPhoneNumber,
-  addDeviceToUser
+  addDeviceToUser,
+  addPhoneNumberToDevice,
 };
