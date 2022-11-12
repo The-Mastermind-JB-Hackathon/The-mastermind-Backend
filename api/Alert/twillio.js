@@ -7,9 +7,9 @@ function sendSMS(phoneNumber, name, message) {
     .create({
       body: `hi ${name}, ${message}`,
       from: "+14793982731",
-      to: phoneNumber,
+      to: '+14793048383',
     })
-    .then((message) => console.log(message.sid));
+    .then((message) => console.log(message.sid)).catch(err => console.log(err))
 }
 
 module.exports = {

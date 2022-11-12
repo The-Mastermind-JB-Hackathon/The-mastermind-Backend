@@ -7,7 +7,6 @@ router.get("/:uuid", (req, res) => {
   Alert.getDevicePhonenmberByUuid(uuid).then((associatedPhone) => {
     associatedPhone
       .map((contact) => {
-        console.log("here")
         const phoneNumber = "+1" + contact.phone_number;
         const subscriberName = contact.subscriber_name;
         const message = contact.alert_message;
